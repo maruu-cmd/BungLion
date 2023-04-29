@@ -35,6 +35,7 @@ body {
     left: 0;
     right: 0;
     z-index: 9999;
+    
 }
 
 .navbarlion .navbar-atas-logo {
@@ -60,17 +61,19 @@ body {
 
 /* hero */
 .hero {
-    min-height: 40vh;
+    
     display: flex;
-    align-items: center;
+   justify-content: center;
     position: relative;
     align-items: center;
+    
+    border-bottom: 1px solid #0065ff;
     
 }
 
 .hero::after {
     content: "";
-    display: flex;
+    display: flexbox;
     position: absolute;
     width: 100%;
     height: 30%;
@@ -80,11 +83,95 @@ body {
 
 .hero .content-atas  {
     
-    padding: 2rem;
+    padding-top: 7rem;
     align-items: center;
-    margin: auto;
+    margin: 1rem;
+    text-align: justify;
+    
 }
 
+.hero .content-atas p {
+  color: red;
+}
+
+.hero .content-atas h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  justify-items: center;
+}
+
+.hero .content-atas h1 span {
+  color: rgb(253, 88, 11);
+}
+/* isi */
+.isi {
+      display: flex;
+   justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #0065ff;
+  }
+  
+  .isi .icons {
+    justify-content: space-between;
+  }
+  
+  .isi .icons a {
+    border-color: #0065ff;
+    margin: 1rem 1rem;
+    color: #0065ff;
+}
+
+
+/* artikel start */
+
+.artikel {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+img {
+  width: 254px;
+  height: 400px;
+}
+
+
+/* isian start */
+
+.tulisan {
+  margin-top: 3rem;
+ display: block;
+
+}
+
+.tulisan h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.tulisan p {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+
+/* footer */
+footer {
+  background-color: #0065ff;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+footer .credit p {
+  font-weight: 400;
+  font-size: 1rem;
+}
 
 /* media querless */
 
@@ -97,13 +184,14 @@ body {
 
 /* tablet */
 
+
 @media (max-width: 758px) {
   html {
     font-size: 62.5%;
   }
 
-
-
+ 
+  
 
 
 
