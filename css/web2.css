@@ -1,0 +1,117 @@
+:root {
+    --bg: #fff;
+    --primary: #0065ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+}
+
+.navbarlion {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1.2rem 7%;
+    background-color: #fff;
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbarlion .navbar-atas-logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary);
+
+}
+
+.navbarlion .navbar-atas-logo span {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.navbarlion .navbar-kanan a {
+    color: var(--primary);
+    font-size: 2rem;
+    margin: 1rem 1rem;
+
+}
+
+
+/* hero */
+.hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    
+}
+
+.hero::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+
+}
+
+.hero .content-atas  {
+    
+    padding: 2rem;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* media querless */
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+
+
+
+
+
+
+  /* handphone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
+}
